@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: ["airbnb-base", "prettier"],
   parserOptions: {
@@ -20,4 +21,5 @@ module.exports = {
     "lines-between-class-members": "off",
     "import/extensions": "off",
   },
+  parser: "@babel/eslint-parser",
 };
