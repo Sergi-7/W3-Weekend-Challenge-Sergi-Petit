@@ -7,11 +7,13 @@ class Card extends Component {
   }
 
   generateHtml() {
-    const newLi = this.element.createElement("li");
-    newLi.innerHtml = `
+    const html = `
+      <li>
       <h2></h2>
       <p></p>
-      <img src="" alt="">`;
+      <img src="" alt="">
+    </li>`;
+    this.element.innerHTML = html;
   }
 }
 
