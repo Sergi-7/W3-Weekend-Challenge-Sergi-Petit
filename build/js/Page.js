@@ -5,7 +5,7 @@ class Page extends Component {
   constructor(parentElement, className, htmlTag) {
     super(parentElement, className, htmlTag);
     this.htmlTag = htmlTag;
-    parentElement.append(this.element);
+    parentElement.appendChild(this.element);
   }
 }
 
