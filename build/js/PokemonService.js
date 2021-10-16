@@ -6,6 +6,12 @@ class PokemonService {
     const pokemonData = await response.json();
     return pokemonData;
   }
+
+  async getPokemonInfo(url) {
+    const pokemon = await fetch(url);
+    const pokemonInfo = await pokemon.json();
+    return pokemonInfo;
+  }
 }
 
 export default PokemonService;
