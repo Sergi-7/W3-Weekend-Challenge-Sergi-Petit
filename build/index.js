@@ -1,7 +1,7 @@
 import Component from "./js/Component.js";
 import Page from "./js/Page.js";
 import Card from "./js/Card.js";
-import PokemonService from "./PokemonService.js";
+import PokemonService from "./js/PokemonService.js";
 
 const mainDiv = new Component(document.body, "main-div", "div");
 const bigDiv = document.querySelector(".main-div");
@@ -16,8 +16,5 @@ const pokemonApi = new PokemonService();
 const getPokemonArray = (async () => {
   const pokemonArray = await pokemonApi.getPokemonData();
   const pokemonData = await pokemonArray.results;
-  console.log(pokemonData);
   return pokemonData;
 })();
-
-console.log(getPokemonArray[0]);
