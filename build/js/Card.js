@@ -13,9 +13,9 @@ class Card extends Component {
   generateHtml() {
     const html = `
       
-      <h2>${this.pokemon.order}</h2>
+      <h2>${this.pokemon.id}</h2>
       <p>${this.pokemon.name}</p>
-      <img src="${this.pokemon.sprites.front_default}" alt="">
+      <img src="${this.pokemon.sprites.other.dream_world.front_default}" alt="">
     `;
     this.element.innerHTML = html;
   }

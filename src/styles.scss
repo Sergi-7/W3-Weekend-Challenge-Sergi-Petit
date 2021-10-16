@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 80, 11),
+    rgb(243, 228, 23)
+  );
+}
+
+.header-nav {
+  background-color: rgb(212, 115, 24);
+  width: auto;
+  height: 200px;
+  box-shadow: 10px 10px 10px rgb(158, 67, 6);
+  border: 2px solid rgb(19, 16, 16);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & h1 {
+    align-self: center;
+    font-size: 60px;
+    margin: 0 auto;
+  }
+  & a {
+    margin: 20px;
+    padding: 20px;
+    background-color: chocolate;
+    align-self: flex-end;
+    border-radius: 20px;
+    border: 1px solid rgb(19, 16, 16);
+    box-shadow: 10px 10px 10px rgb(158, 67, 6);
+    font-weight: 900;
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+}
+.main-div {
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon {
+  background-image: linear-gradient(
+    to right,
+    rgb(158, 56, 16),
+    rgb(189, 178, 33)
+  );
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(77, 56, 33);
+  box-shadow: 5px 5px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 35px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  &:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+    font-size: large;
+    width: 210px;
+    height: 210px;
+  }
+  & h2 {
+    margin: 0 20px;
+    font-size: 40px;
+  }
+  & p {
+    margin: 10px 0;
+    display: inline-flex;
+    font-size: x-large;
+  }
+  & img {
+    width: 120px;
+    height: 120px;
+  }
+}

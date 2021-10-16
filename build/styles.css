@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom right, #ff500b, #f3e417);
+}
+
+.header-nav {
+  background-color: #d47318;
+  width: auto;
+  height: 200px;
+  box-shadow: 10px 10px 10px #9e4306;
+  border: 2px solid #131010;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-nav h1 {
+  align-self: center;
+  font-size: 60px;
+  margin: 0 auto;
+}
+.header-nav a {
+  margin: 20px;
+  padding: 20px;
+  background-color: chocolate;
+  align-self: flex-end;
+  border-radius: 20px;
+  border: 1px solid #131010;
+  box-shadow: 10px 10px 10px #9e4306;
+  font-weight: 900;
+}
+.header-nav a:hover {
+  filter: brightness(120%);
+}
+
+.main-div {
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon {
+  background-image: linear-gradient(to right, #9e3810, #bdb221);
+  width: 200px;
+  height: 200px;
+  border: 2px solid #4d3821;
+  box-shadow: 5px 5px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 35px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pokemon:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+  font-size: large;
+  width: 210px;
+  height: 210px;
+}
+.pokemon h2 {
+  margin: 0 20px;
+  font-size: 40px;
+}
+.pokemon p {
+  margin: 10px 0;
+  display: inline-flex;
+  font-size: x-large;
+}
+.pokemon img {
+  width: 120px;
+  height: 120px;
+}
+
+/*# sourceMappingURL=styles.css.map */
