@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 80, 11),
+    rgb(243, 228, 23)
+  );
+}
+
+.main-div {
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon {
+  background-image: linear-gradient(
+    to right,
+    rgb(158, 56, 16),
+    rgb(189, 178, 33)
+  );
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(77, 56, 33);
+  box-shadow: 5px 5px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 35px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  &:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+    font-size: large;
+    width: 210px;
+    height: 210px;
+  }
+  & h2 {
+    margin: 0 20px;
+    font-size: 40px;
+  }
+  & p {
+    margin: 10px 0;
+    display: inline-flex;
+    font-size: x-large;
+  }
+  & img {
+    width: 120px;
+    height: 120px;
+  }
+}

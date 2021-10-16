@@ -6,10 +6,11 @@ import PokemonService from "./js/PokemonService.js";
 const createMainDiv = new Component(document.body, "main-div", "div");
 const mainDiv = document.querySelector(".main-div");
 
+const createHeaderNav = new Component(mainDiv, "header-nav", "nav");
+const headerNav = document.querySelector(".header-nav");
+
 const createPokemonList = new Component(mainDiv, "pokemon-list", "ul");
 const pokemonList = document.querySelector(".pokemon-list");
-
-const createHeaderNav = new Page(mainDiv, "header-nav", "nav");
 
 const pokemonApi = new PokemonService();
 
