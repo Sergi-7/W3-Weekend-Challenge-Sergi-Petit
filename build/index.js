@@ -3,18 +3,28 @@ import Page from "./js/Page.js";
 import Card from "./js/Card.js";
 import PokemonService from "./js/PokemonService.js";
 
-const mainDiv = new Component(document.body, "main-div", "div");
-const bigDiv = document.querySelector(".main-div");
+const createMainDiv = new Component(document.body, "main-div", "div");
+const mainDiv = document.querySelector(".main-div");
 
-const test = new Page(bigDiv, "header-nav", "nav");
-const newCard = new Card(bigDiv, "pokemon-list");
+const createPokemonList = new Component(mainDiv, "pokemon-list", "ul");
+const pokemonList = document.querySelector(".pokemon-list");
 
-const testElement = document.querySelector(".test");
+const createHeaderNav = new Page(mainDiv, "header-nav", "nav");
 
 const pokemonApi = new PokemonService();
 
 const getPokemonArray = (async () => {
   const pokemonArray = await pokemonApi.getPokemonData();
   const pokemonData = await pokemonArray.results;
-  return pokemonData;
+
+  await Promise.all(
+    pokemonData.map(async (pokemon) => {
+      const pokemonUrl = pokemon.url;
+
+      const newPokemon = await pokemonApi.getPokemonInfo(pokemonUrl);
+
+      const newPokemonCard = new Card(pokemonList, "pokemon", "li", newPokemon);
+      return newPokemonCard;
+    })
+  );
 })();

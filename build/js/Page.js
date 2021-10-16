@@ -11,8 +11,6 @@ class Page extends Component {
     this.htmlTag = htmlTag;
     parentElement.appendChild(this.element);
   }
-
-  createPokemons() {}
 }
 
 export default Page;
