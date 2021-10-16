@@ -7,10 +7,41 @@ body {
   background-image: linear-gradient(to bottom right, #ff500b, #f3e417);
 }
 
+.header-nav {
+  background-color: #d47318;
+  width: auto;
+  height: 200px;
+  box-shadow: 10px 10px 10px #9e4306;
+  border: 2px solid #131010;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-nav h1 {
+  align-self: center;
+  font-size: 60px;
+  margin: 0 auto;
+}
+.header-nav a {
+  margin: 20px;
+  padding: 20px;
+  background-color: chocolate;
+  align-self: flex-end;
+  border-radius: 20px;
+  border: 1px solid #131010;
+  box-shadow: 10px 10px 10px #9e4306;
+  font-weight: 900;
+}
+.header-nav a:hover {
+  filter: brightness(120%);
+}
+
 .main-div {
   margin-right: 100px;
   margin-left: 100px;
   display: flex;
+  flex-direction: column;
 }
 
 .pokemon-list {

@@ -2,11 +2,18 @@ import Component from "./js/Component.js";
 import Page from "./js/Page.js";
 import Card from "./js/Card.js";
 import PokemonService from "./js/PokemonService.js";
+import Header from "./js/Header-nav.js";
 
 const createMainDiv = new Component(document.body, "main-div", "div");
 const mainDiv = document.querySelector(".main-div");
 
-const createHeaderNav = new Component(mainDiv, "header-nav", "nav");
+const createHeaderNav = new Header(
+  mainDiv,
+  "header-nav",
+  "nav",
+  "Pokemon",
+  "My Pokemons"
+);
 const headerNav = document.querySelector(".header-nav");
 
 const createPokemonList = new Component(mainDiv, "pokemon-list", "ul");

@@ -11,10 +11,40 @@ body {
   );
 }
 
+.header-nav {
+  background-color: rgb(212, 115, 24);
+  width: auto;
+  height: 200px;
+  box-shadow: 10px 10px 10px rgb(158, 67, 6);
+  border: 2px solid rgb(19, 16, 16);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & h1 {
+    align-self: center;
+    font-size: 60px;
+    margin: 0 auto;
+  }
+  & a {
+    margin: 20px;
+    padding: 20px;
+    background-color: chocolate;
+    align-self: flex-end;
+    border-radius: 20px;
+    border: 1px solid rgb(19, 16, 16);
+    box-shadow: 10px 10px 10px rgb(158, 67, 6);
+    font-weight: 900;
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+}
 .main-div {
   margin-right: 100px;
   margin-left: 100px;
   display: flex;
+  flex-direction: column;
 }
 
 .pokemon-list {
