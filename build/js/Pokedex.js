@@ -1,5 +1,5 @@
 class Pokedex {
-  urlApi = "https://pokedex-sergi.herokuapp.com/";
+  urlApi = "https://pokedex-sergi.herokuapp.com/pokemon";
 
   async Pokemon() {
     const response = await fetch(this.urlApi);
@@ -18,7 +18,7 @@ class Pokedex {
       };
   }
 
-  async delentePokemon(id) {
+  async deletePokemon(id) {
     const response = await fetch(`${this.urlApi}${id}`, {
       method: "DELETE",
     });
