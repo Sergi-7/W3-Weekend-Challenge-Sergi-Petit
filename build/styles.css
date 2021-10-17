@@ -75,30 +75,38 @@ body {
   box-shadow: 5px 5px;
   border-radius: 10px;
   margin: 20px;
-  padding: 35px;
+  padding: 20px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 .pokemon:hover {
   filter: brightness(150%);
-  cursor: pointer;
   font-size: large;
   width: 210px;
   height: 210px;
 }
 .pokemon h2 {
-  margin: 0 20px;
-  font-size: 40px;
+  margin: 0 10px;
+  font-size: 30px;
 }
 .pokemon p {
-  margin: 10px 0;
-  display: inline-flex;
-  font-size: x-large;
+  margin: 0;
+  font-size: large;
+  display: flex;
+  align-items: center;
 }
 .pokemon img {
   width: 120px;
   height: 120px;
+}
+.pokemon i {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.pokemon i:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
