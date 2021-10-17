@@ -102,13 +102,3 @@ loadPreviousPage.addEventListener("click", async () => {
   );
   offset -= 10;
 });
-
-const pokedex = new Pokedex();
-const testPokemon = {
-  name: "santi",
-  id: "figueras",
-  skill: "marioneta",
-};
-
-pokedex.createPokemon(testPokemon);
-pokedex.deletePokemon("figueras");
