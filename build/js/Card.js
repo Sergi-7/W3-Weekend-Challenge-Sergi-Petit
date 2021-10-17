@@ -12,11 +12,12 @@ class Card extends Component {
 
   generateHtml() {
     const html = `
-      <a href="./pokemon-details.html">
+      
       <h2>${this.pokemon.id}</h2>
       <p>${this.pokemon.name}</p>
       <img src="${this.pokemon.sprites.other.dream_world.front_default}" alt="">
-    </a>`;
+      <a href="./pokemon-details.html"><p>Ver detalles</p></a>
+      <i class="far fa-star"></i>`;
     this.element.innerHTML = html;
   }
 }
