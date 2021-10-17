@@ -12,8 +12,8 @@ class PageNav extends Component {
     this.generateHtml();
   }
   generateHtml() {
-    const html = `<a href="">${this.link1}</a>
-                <a href="">${this.link2}</a>
+    const html = `<a class="page-nav__back">${this.link1}</a>
+                <a class="page-nav__next">${this.link2}</a>
                 `;
     this.element.innerHTML = html;
   }
