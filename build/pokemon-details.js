@@ -20,11 +20,15 @@ anchorHref.href = "./index.html";
 
 const pokemonApi = new PokemonService();
 
-const pokemons = (async () => {
+/*const pokemons = (async () => {
   const pokemonArray = await pokemonApi.getPokemonData(1000, 0);
   const pokemonData = await pokemonArray.results;
-  console.log(pokemonData);
-  return pokemonData;
+  console.log(pokemonData)
+  await Promise.all({
+    //pokemonData.find(async (pokemon) => {
+      pokemon
+    })
+  })
 })();
 
 // const createCard = new Card(mainDiv, "pokemon", "li", pokemon);
