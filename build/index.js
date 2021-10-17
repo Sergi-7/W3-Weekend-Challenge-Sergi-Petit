@@ -4,6 +4,7 @@ import Card from "./js/Card.js";
 import PokemonService from "./js/PokemonService.js";
 import Header from "./js/Header-nav.js";
 import PageNav from "./js/page-nav.js";
+import Pokedex from "./js/Pokedex.js";
 
 const createMainDiv = new Component(document.body, "main-div", "div");
 const mainDiv = document.querySelector(".main-div");
@@ -101,3 +102,13 @@ loadPreviousPage.addEventListener("click", async () => {
   );
   offset -= 10;
 });
+
+const pokedex = new Pokedex();
+const testPokemon = {
+  name: "santi",
+  id: "figueras",
+  skill: "marioneta",
+};
+
+pokedex.createPokemon(testPokemon);
+pokedex.deletePokemon("figueras");
