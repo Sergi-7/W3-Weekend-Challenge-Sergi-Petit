@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll ",
-    "sass": "sass --watch src/styles.scss build/styles.css"
+    "sass": "sass --watch src/styles.scss build/styles.css",
+    "compile-css": "sass src/styles.scss build/styles.css "
   },
   "author": "",
   "license": "ISC",
