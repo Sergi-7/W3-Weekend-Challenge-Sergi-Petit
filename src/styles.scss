@@ -11,6 +11,24 @@ body {
   );
 }
 
+.page-nav {
+  margin: 20px;
+  width: 200px;
+  display: flex;
+  align-items: flex-end;
+  & a {
+    position: relative;
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 20px;
+    margin: 10px;
+    &:hover {
+      background-color: rgb(131, 59, 7);
+    }
+  }
+}
+
 .header-nav {
   background-color: rgb(212, 115, 24);
   width: auto;

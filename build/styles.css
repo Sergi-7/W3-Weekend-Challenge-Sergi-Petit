@@ -7,6 +7,24 @@ body {
   background-image: linear-gradient(to bottom right, #ff500b, #f3e417);
 }
 
+.page-nav {
+  margin: 20px;
+  width: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+.page-nav a {
+  position: relative;
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 100%;
+  border-radius: 20px;
+  margin: 10px;
+}
+.page-nav a:hover {
+  background-color: #833b07;
+}
+
 .header-nav {
   background-color: #d47318;
   width: auto;
