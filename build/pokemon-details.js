@@ -14,3 +14,6 @@ const createHeader = new Header(
   "Pokemon Details",
   "Back to Pokemons"
 );
+
+const anchorHref = document.querySelector("a");
+anchorHref.href = "./index.html";
