@@ -3,6 +3,7 @@ import Page from "./js/Page.js";
 import Card from "./js/Card.js";
 import PokemonService from "./js/PokemonService.js";
 import Header from "./js/Header-nav.js";
+import PageNav from "./js/page-nav.js";
 
 const createMainDiv = new Component(document.body, "main-div", "div");
 const mainDiv = document.querySelector(".main-div");
@@ -18,6 +19,8 @@ const headerNav = document.querySelector(".header-nav");
 
 const createPokemonList = new Component(mainDiv, "pokemon-list", "ul");
 const pokemonList = document.querySelector(".pokemon-list");
+
+const createNextPageNav = new PageNav(mainDiv, "page-nav", "nav", "<<", ">>");
 
 const pokemonApi = new PokemonService();
 
