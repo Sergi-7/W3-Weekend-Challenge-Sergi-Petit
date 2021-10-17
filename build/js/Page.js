@@ -4,7 +4,6 @@ import PokemonService from "./PokemonService.js";
 
 class Page extends Component {
   parentElement;
-  pokemonService;
 
   constructor(parentElement, className, htmlTag) {
     super(parentElement, className, htmlTag);
