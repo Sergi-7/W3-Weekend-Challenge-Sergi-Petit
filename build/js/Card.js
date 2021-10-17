@@ -14,7 +14,7 @@ class Card extends Component {
     const html = `
       
       <h2>${this.pokemon.id}</h2>
-      <p>${this.pokemon.name}</p>
+      <p>${this.pokemon.name.toUpperCase()}</p>
       <img src="${this.pokemon.sprites.other.dream_world.front_default}" alt="">
       <a href="./pokemon-details.html"><p>Ver detalles</p></a>
       <i class="far fa-star"></i>`;

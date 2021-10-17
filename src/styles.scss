@@ -88,7 +88,6 @@ body {
   flex-wrap: wrap;
   &:hover {
     filter: brightness(150%);
-    cursor: pointer;
     font-size: large;
     width: 210px;
     height: 210px;
@@ -99,8 +98,9 @@ body {
   }
   & p {
     margin: 0;
-    display: inline-flex;
-    font-size: x-large;
+    font-size: large;
+    display: flex;
+    align-items: center;
   }
   & img {
     width: 120px;
